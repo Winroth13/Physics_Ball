@@ -43,6 +43,17 @@ public class OptionsMenu : MonoBehaviour
                 currentResolutionIndex = i;
             }
         }
+
+        //If there are no resolutions available.
+        if (resolutions.Length == 0)
+        {
+            //Creates an option to display that there are no options.
+            string option = "Not supported";
+
+            //Adds the option to the list of resolution options.
+            options.Add(option);
+        }
+
         //Adds all resolution optiont to the resolution dropdown.
         resolutionDropdown.AddOptions(options);
 
