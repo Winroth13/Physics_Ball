@@ -48,7 +48,7 @@ public class OptionsMenu : MonoBehaviour
         if (resolutions.Length == 0)
         {
             //Creates an option to display that there are no options.
-            string option = "Not supported";
+            string option = "No support";
 
             //Adds the option to the list of resolution options.
             options.Add(option);
