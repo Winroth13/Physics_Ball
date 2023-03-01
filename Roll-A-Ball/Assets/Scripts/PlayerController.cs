@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         //Diplays amount of collected pickups.
-        countText.text = "Count: " + count.ToString();
+        countText.text = count.ToString() + "/12 Collected";
 
         //Displays win message and menu if you have collected all pickups.
         if (count >= 12)

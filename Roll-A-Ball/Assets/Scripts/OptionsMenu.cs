@@ -54,7 +54,7 @@ public class OptionsMenu : MonoBehaviour
     }
 
     //The resolution dropdown.
-    public void SetResolution (int resolutionIndex)
+    public void Resolution (int resolutionIndex)
     {
         //Stores the selected resolution in a variable.
         Resolution resolution = resolutions[resolutionIndex];
@@ -64,7 +64,7 @@ public class OptionsMenu : MonoBehaviour
     }
 
     //The quality dropdown.
-    public void SetQuality (int qualityIndex)
+    public void Quality (int qualityIndex)
     {
         //Sets the quality level to the selected level.
         QualitySettings.SetQualityLevel(qualityIndex);
@@ -72,7 +72,7 @@ public class OptionsMenu : MonoBehaviour
     }
 
     //The fullscreen toggle.
-    public void SetFullscreen (bool isFullscreen)
+    public void Fullscreen (bool isFullscreen)
     {
         //Toggles fullscreen on or off according to the toggle.
         Screen.fullScreen = isFullscreen;

@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     //The play button.
-    public void PlayGame ()
+    public void Play ()
     {
         //Loads in the first level.
         SceneManager.LoadScene(1);
     }
 
     //The quit button.
-    public void QuitGame ()
+    public void Quit ()
     {
         //Quits the program.
         Debug.Log("Quit");
