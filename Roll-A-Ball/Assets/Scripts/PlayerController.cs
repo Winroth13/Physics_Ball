@@ -39,6 +39,9 @@ public class PlayerController : MonoBehaviour
     //The strength of the player object's jump.
     public float jumpStrength = 300.0f;
 
+    //The number of pickups needed to pick up to win.
+    public int pickUpsToWin = 7;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,10 +82,10 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         //Diplays amount of collected pickups.
-        countText.text = count.ToString() + "/12 Collected";
+        countText.text = count.ToString() + "/" + pickUpsToWin + "Collected";
 
         //Displays win message and menu if you have collected all pickups.
-        if (count >= 12)
+        if (count >= pickUpsToWin)
         {
             winTextObject.SetActive(true);
             gameMenuObject.SetActive(true);
