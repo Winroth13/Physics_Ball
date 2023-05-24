@@ -6583,7 +6583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1484167378}
-  rotationSpeed: 500
+  rotationSpeed: 200
   mainCamera: {fileID: 963194228}
   zoomLevel: 0
   zoomSensitivity: 1
